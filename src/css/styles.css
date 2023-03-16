@@ -1,3 +1,22 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./advantages.css');
+@import url('./components.css');
+@import url('./production.css');
+@import url('./products.css');
+@import url('./sellers.css');
+@import url('./reviews.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
+@import url('./overlay.css');
+
 @font-face {
   font-family: Montserrat-700;
   src: url(../fonts/Montserrat-Bold.ttf);
@@ -60,26 +79,7 @@
   padding-right: 15px;
   margin: 0 auto;
 }
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 body {
   font-family: Montserrat-400, sans-serif;
   color: var(--dark-color);
 }
-
-@import url('./reset.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./advantages.css');
-@import url('./components.css');
-@import url('./production.css');
-@import url('./products.css');
-@import url('./sellers.css');
-@import url('./reviews.css');
-@import url('./subscribe.css');
-@import url('./footer.css');
-@import url('./overlay.css');
