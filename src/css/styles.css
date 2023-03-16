@@ -31,6 +31,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --light-color: #ffffff;
+  --dark-color: #111111;
+  --accent-color: #fd9222;
+  --light-background-color: #fafafa;
+  --dark-background-color: #1e1823;
 }
 .visually-hidden {
   position: absolute;
