@@ -117,6 +117,15 @@
     margin-top: 24px;
     gap: 24px;
   }
+
+  .footer-soc-item {
+    height: 24px;
+  }
+
+  .footer-soc-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
