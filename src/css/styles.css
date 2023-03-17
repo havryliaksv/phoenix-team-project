@@ -4,6 +4,8 @@
   | default @import url()
   |============================
 */
+@import url('./slick.css');
+@import url('./slick-theme.css');
 @import url('./reset.css');
 @import url('./header.css');
 @import url('./hero.css');
@@ -16,8 +18,6 @@
 @import url('./subscribe.css');
 @import url('./footer.css');
 @import url('./overlay.css');
-@import url('./slick.css');
-@import url('./slick-theme.css');
 
 @font-face {
   font-family: Montserrat-700;

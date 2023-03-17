@@ -4,7 +4,6 @@ $(function () {
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1200,
