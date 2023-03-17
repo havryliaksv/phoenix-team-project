@@ -72,6 +72,10 @@
   visibility: hidden;
   pointer-events: none;
 }
+body {
+  font-family: Montserrat-400, sans-serif;
+  color: var(--dark-color);
+}
 .container {
   width: 100%;
   max-width: 365px;
@@ -79,7 +83,13 @@
   padding-right: 15px;
   margin: 0 auto;
 }
-body {
-  font-family: Montserrat-400, sans-serif;
-  color: var(--dark-color);
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1136px;
+  }
 }
