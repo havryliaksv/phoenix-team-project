@@ -40,12 +40,11 @@
 }
 
 .advantage-text {
-    margin-top: 0px;
     width: 308px;
     font-family: Montserrat-400;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: -0.02px;
     color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 29px;
+    margin: 0px;
 }
