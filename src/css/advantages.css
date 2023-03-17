@@ -11,6 +11,10 @@
     flex-wrap: wrap;
 }
 
+.advantage-icon-container:first-child {
+    margin-top: 29px;
+}
+
 .advantage-icon-container {
     width: 62px;
     height: 62px;
