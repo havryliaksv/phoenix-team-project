@@ -1,26 +1,20 @@
 $(function () {
-  $('.клас слайдеру').slick({
+  $('.reviews-list').slick({
     dots: true,
+    arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    mobileFirst: true,
+    adaptiveHeight: true,
     responsive: [
       {
         breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 375,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
