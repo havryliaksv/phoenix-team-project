@@ -1,25 +1,57 @@
-/* <!-- .advantages-section .advantages .advantage-icon-container .advantage-icon .advantage-headline .advantage-text--> */
-
 .advantages-section .container {
     background-color: var(--dark-background-color);
+    color: var(--light-color);
+    padding-block: 30px;
 }
 
 .advantages {
-
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
 }
 
 .advantage-icon-container {
-
+    width: 54px;
+    height: 54px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.advantage-icon {
+.taste-icon {
+    width: 28px;
+    height: 28px;
+}
 
+.price-icon {
+    width: 27px;
+    height: 27px;
+}
+
+.production-icon {
+    width: 26px;
+    height: 26px;
 }
 
 .advantage-headline {
-
+    margin-top: 18px;
+    font-family: Montserrat-600;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .advantage-text {
-
+    margin-top: 18px;
+    width: 308px;
+    font-family: Montserrat-400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0;
 }
