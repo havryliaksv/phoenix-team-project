@@ -11,7 +11,11 @@
     flex-wrap: wrap;
 }
 
-.advantage-icon-container:first-child {
+.advantage {
+    margin-bottom: 29px;
+}
+
+.advantage:first-child {
     margin-top: 29px;
 }
 
@@ -40,11 +44,11 @@
 }
 
 .advantage-text {
+    margin: 0px;
     width: 308px;
     font-family: Montserrat-400;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: -0.02px;
     color: rgba(255, 255, 255, 0.7);
-    margin: 0px;
 }
