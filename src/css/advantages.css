@@ -7,6 +7,7 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    column-gap: 29px;
 }
 
 .advantage {
@@ -34,7 +35,6 @@
 }
 
 .advantage-headline {
-    margin-top: 0px;
     font-family: Montserrat-600;
     font-size: 18px;
     line-height: 22px;
@@ -43,7 +43,6 @@
 }
 
 .advantage-text {
-    margin: 0px;
     width: 308px;
     font-family: Montserrat-400;
     font-size: 14px;
