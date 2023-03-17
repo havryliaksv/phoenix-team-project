@@ -1,6 +1,5 @@
-.advantages-section .container {
+.advantages-section {
     background-color: var(--dark-background-color);
-    color: var(--light-color);
 }
 
 .advantages {
@@ -40,6 +39,7 @@
     font-family: Montserrat-600;
     font-size: 18px;
     line-height: 22px;
+    color: var(--light-color);
     margin-bottom: 18px;
 }
 
