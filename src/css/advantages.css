@@ -1,7 +1,6 @@
 .advantages-section .container {
     background-color: var(--dark-background-color);
     color: var(--light-color);
-    padding-block: 30px;
 }
 
 .advantages {
@@ -10,48 +9,39 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 40px;
 }
 
 .advantage-icon-container {
-    width: 54px;
-    height: 54px;
+    width: 62px;
+    height: 62px;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 22px;
 }
 
-.taste-icon {
-    width: 28px;
-    height: 28px;
-}
-
-.price-icon {
-    width: 27px;
-    height: 27px;
-}
-
-.production-icon {
-    width: 26px;
-    height: 26px;
+.advantage-icon {
+    width: 32px;
+    height: 32px;
 }
 
 .advantage-headline {
-    margin-top: 18px;
+    margin-top: 0px;
     font-family: Montserrat-600;
     font-size: 18px;
     line-height: 22px;
+    margin-bottom: 18px;
 }
 
 .advantage-text {
-    margin-top: 18px;
+    margin-top: 0px;
     width: 308px;
     font-family: Montserrat-400;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: -0.02px;
     color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 0;
+    margin-bottom: 29px;
 }
