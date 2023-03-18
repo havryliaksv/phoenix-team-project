@@ -83,26 +83,6 @@
   margin-bottom: 65px;
 }
 
-@media screen and (min-width: 768px) {
-  .reviews-list .slick-dots {
-    bottom: -45px;
-  }
-  .reviews {
-    padding-bottom: 100px;
-  }
-  .reviews-list.slick-dotted.slick-slider {
-    margin-bottom: 95px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .reviews-list .slick-track {
-    gap: 28px;
-  }
-  .reviews {
-    padding-bottom: 128px;
-  }
-}
 .review-btn {
   display: block;
   padding: 12px 28px;
@@ -113,8 +93,44 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   text-align: center;
+  color: var(--dark-color);
 
   background-color: transparent;
   border: 1px solid var(--accent-color);
   border-radius: 100px;
+
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
+}
+.review-btn:hover,
+.review-btn:focus {
+  color: var(--light-color);
+  background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-list .slick-dots {
+    bottom: -45px;
+  }
+  .reviews {
+    padding-bottom: 100px;
+  }
+  .reviews-list.slick-dotted.slick-slider {
+    margin-bottom: 95px;
+  }
+  .review-btn {
+    padding: 14px 40px;
+
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews-list .slick-track {
+    gap: 28px;
+  }
+  .reviews {
+    padding-bottom: 128px;
+  }
 }
