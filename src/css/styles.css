@@ -118,7 +118,7 @@ body {
   padding: 0;
   width: 13px;
   height: 13px;
-  background-image: url(../img/dot.svg);
+  background-image: url(/img/dot.svg);
   background-repeat: no-repeat;
   transition: background-image 250ms var(--timeing-function);
 }
@@ -127,7 +127,7 @@ body {
 }
 .slick-dots > li.slick-active button {
   width: 28px;
-  background-image: url(../img/active-dot.svg);
+  background-image: url(/img/active-dot.svg);
 }
 .slick-track {
   display: flex;
