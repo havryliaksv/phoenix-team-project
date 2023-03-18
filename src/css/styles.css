@@ -56,7 +56,7 @@
   --accent-color: #fd9222;
   --light-background-color: #fafafa;
   --dark-background-color: #1e1823;
-  --timeing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .visually-hidden {
   position: absolute;
@@ -120,7 +120,7 @@ body {
   height: 13px;
   background-image: url(/img/dot.svg);
   background-repeat: no-repeat;
-  transition: background-image 250ms var(--timeing-function);
+  transition: background-image 250ms var(--timing-function);
 }
 .slick-dots li button:before {
   display: none;
