@@ -1,1 +1,123 @@
+.production {
+    padding-bottom: 72px;
+}
 
+.container {}
+
+.production-title {
+    font-family: Montserrat-600, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.production-title-text {
+    color: #FD9222;
+}
+
+.production-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrap-video {
+    display: block;
+
+}
+
+.production-video {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(pastry-chef-preparing-chocolate-cake.jpg);
+}
+
+.wrap-text {
+padding: 20px 14px;
+}
+
+.production-title-secondary {
+    font-family: Montserrat-600, sans-serif;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.production-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    list-style-type: disc;
+    /* list-style-position: outside; */
+}
+
+.production-item {
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    color: #111111;
+}
+
+@media screen and (min-width: 375px) {
+    .production-title {
+            margin-bottom: 50px;
+        }
+
+    .production-video {
+            width: 335px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .production .container {
+        max-width: 614px;
+    }
+
+    .production {
+        padding-bottom: 100px;
+    }
+
+    .production-title {
+        line-height: 1.4;
+    }
+
+    .production-video {
+        width: 583px;
+        height: 400px;
+    }
+
+    .wrap-text {
+        padding: 32px;
+    }
+
+    .production-title-secondary {
+        margin-bottom: 28px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .production .container {
+            max-width: 1136px;
+        }
+
+    .production {
+            padding-bottom: 128px;
+        }
+
+    .production-wrap {
+            display: flex;
+            flex-direction: row;
+        }
+
+    .production-list {
+            display: flex;
+            gap: 24px;
+        }
+
+}
