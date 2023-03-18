@@ -5,7 +5,7 @@
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)
     ),
-    url('/src/img/subscribe-img/Subscribe-mobile-min.jpg');
+    url(../img/subscribe-img/subscribe-mobile-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -80,12 +80,12 @@
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   screen and (max-width: 767px) and (min-resolution: 192dpi),
   screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero-section {
+  .subscribe-section {
     background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
       ),
-      url('/src/img/subscribe-img/Subscribe-mobile-2x-min.jpg');
+      url('/src/img/subscribe-img/subscribe-mobile-2x-min.jpg');
   }
 }
