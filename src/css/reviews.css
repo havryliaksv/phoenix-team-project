@@ -103,3 +103,18 @@
     padding-bottom: 128px;
   }
 }
+.review-btn {
+  display: block;
+  padding: 12px 28px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: Montserrat-600, sans-serif;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  text-align: center;
+
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 100px;
+}
