@@ -63,6 +63,11 @@
   display: block;
   width: 100%;
   height: 100%;
+  color: var(--light-color);
+}
+
+.footer-soc-icon {
+  fill: currentColor;
 }
 
 .footer-line {
