@@ -12,36 +12,26 @@
 }
 
 @media (max-width: 768px) {
-    .advantages-section .container {
-        max-width: 375px;
-        padding: 29px 20px;
-    }
-
     .advantages {
+        width: 375px;
+        padding: 29px 5px;
         row-gap: 29px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-    .advantages-section .container {
-        min-width: 375px;
-        max-width: 768px;
-        padding: 50px 32px;
-    }
-
     .advantages {
+        width: 768px;
+        padding: 50px 17px;
         column-gap: 60px;
         row-gap: 41px;
     }
 }
 
 @media (min-width: 1200px) {
-    .advantages-section .container {
-        min-width: 1300px;
-        padding: 50px;
-    }
-
     .advantages {
+        width: 1200px;
+        padding: 50px 35px;
         column-gap: 70px;
     }
 
