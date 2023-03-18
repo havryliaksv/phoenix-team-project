@@ -23,8 +23,7 @@
     .advantages {
         width: 768px;
         padding: 50px 17px;
-        column-gap: 60px;
-        row-gap: 41px;
+        gap: 41px 60px;
     }
 }
 
