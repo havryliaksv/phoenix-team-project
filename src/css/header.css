@@ -1,1 +1,264 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 14px;
+}
 
+.container.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 767px;
+}
+
+.header-div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-top: 3.5px;
+  padding-bottom: 3.5px;
+}
+
+.header-logo {
+  font-family: Montserrat-700-Italic;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.logo-icon-link {
+  width: 21px;
+  height: 21px;
+}
+
+.js-open-menu {
+  display: block;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: #2e2f42;
+}
+
+.menu-icon {
+  display: block;
+  stroke: var(--dark-color);
+}
+
+.js-menu-container {
+  display: none;
+}
+
+.js-menu-container.is-open {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 220px;
+  height: 100%;
+  padding: 20px;
+  padding-top: 136px;
+  background-color: #1e1823;
+  z-index: 2;
+  overflow-y: auto;
+
+  animation-name: slideIn;
+  animation-duration: 500ms;
+  animation-timing-function: var(--timing-function);
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    right: -220px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.close-btn {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.close-icon {
+  stroke: var(--light-color);
+  transition: stroke 250ms var(--timing-function);
+}
+
+.close-icon:is(:hover, :focus) {
+  stroke: var(--accent-color);
+}
+
+.header-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: 30px;
+}
+
+.header-link {
+  font-family: Montserrat-500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--light-color);
+
+  transition: color 250ms var(--timing-function);
+}
+
+.header-link:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+.header-soc-list {
+  display: flex;
+  gap: 18px;
+}
+
+.header-soc-link {
+  display: block;
+  height: 22px;
+  color: var(--light-color);
+
+  transition: color 250ms var(--timing-function);
+}
+
+.header-soc-link:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
+.header-soc-icon {
+  stroke: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .header-div {
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
+  }
+
+  .js-open-menu {
+    width: 32px;
+    height: 32px;
+  }
+
+  .js-menu-container.is-open {
+    width: 290px;
+    height: 100%;
+    padding: 20px;
+    padding: 156px 32px 24px;
+    background-color: #1e1823;
+  }
+
+  .close-btn {
+    top: 24px;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-list {
+    margin-left: 53px;
+  }
+
+  .header-soc-list {
+    display: flex;
+    gap: 18px;
+  }
+
+  .header-soc-link {
+    height: 24px;
+    color: var(--light-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+
+  .container.wrap {
+    max-width: 1166px;
+  }
+
+  .header-div {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+  .logo-icon-link {
+    width: 24px;
+    height: 24px;
+  }
+
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .js-open-menu {
+    display: none;
+  }
+
+  .js-menu-container {
+    display: block;
+  }
+
+  .header-list {
+    flex-direction: row;
+  }
+
+  .close-btn {
+    display: none;
+  }
+
+  .header-wrap {
+    flex-direction: row;
+    align-items: center;
+    gap: 137px;
+  }
+
+  .header-link {
+    color: var(--dark-color);
+  }
+
+  .header-soc-link {
+    color: var(--dark-color);
+  }
+
+  .header-soc-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
