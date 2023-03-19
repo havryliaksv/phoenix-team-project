@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/phoenix-team-project/assets/index-53f14f6e.js"></script>
-    <link rel="stylesheet" href="/phoenix-team-project/assets/index-f7a6f079.css">
+    <link rel="stylesheet" href="/phoenix-team-project/assets/index-f6d36dca.css">
   </head>
   <body>
     <header id="home" class="header">
@@ -23,7 +23,7 @@
           <a class="header-logo" href="../index.html">Simply <span class="logo-span">Chocolate</span></a>
           <a class="logo-icon-link" href="../index.html">
             <svg class="logo-icon" width="21" height="21">
-              <use href="/phoenix-team-project/assets/sprite-592c3da9.svg#icon-chocolate"></use>
+              <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-chocolate"></use>
             </svg>
           </a>
         </div>
@@ -34,13 +34,13 @@
           aria-controls="mobile-menu"
         >
           <svg class="menu-icon" width="28" height="28">
-            <use href="/phoenix-team-project/assets/sprite-592c3da9.svg#icon-menu"></use>
+            <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-menu"></use>
           </svg>
         </button>
         <div class="js-menu-container">
           <button class="close-btn js-close-menu">
             <svg class="close-icon" width="28" height="28">
-              <use href="/phoenix-team-project/assets/sprite-592c3da9.svg#icon-close"></use>
+              <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-close"></use>
             </svg>
           </button>
           <div class="header-wrap">
@@ -65,14 +65,14 @@
               <li class="header-soc-item">
                 <a target="_blank" class="header-soc-link" href="https://www.instagram.com/">
                   <svg class="header-soc-icon" width="22" height="22">
-                    <use href="/phoenix-team-project/assets/sprite-592c3da9.svg#icon-instagram"></use>
+                    <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="header-soc-item">
                 <a target="_blank" class="header-soc-link" href="https://twitter.com/">
                   <svg class="header-soc-icon" width="22" height="22">
-                    <use href="/phoenix-team-project/assets/sprite-592c3da9.svg#icon-twitter"></use>
+                    <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
@@ -96,7 +96,7 @@
         <div class="advantage-content">
           <div class="advantage-icon-container">
             <svg class="advantage-icon">
-              <use href="/phoenix-team-project/assets/sprite-592c3da9.svg#icon-chocolate-bar"></use>
+              <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-chocolate-bar"></use>
             </svg>
           </div>
 
@@ -117,7 +117,7 @@
         <div class="advantage-content">
           <div class="advantage-icon-container">
             <svg class="advantage-icon">
-              <use href="/phoenix-team-project/assets/sprite-592c3da9.svg#icon-coin"></use>
+              <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-coin"></use>
             </svg>
           </div>
 
@@ -139,7 +139,7 @@
         <div class="advantage-content">
           <div class="advantage-icon-container">
             <svg class="advantage-icon">
-              <use href="/phoenix-team-project/assets/sprite-592c3da9.svg#icon-spoon"></use>
+              <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-spoon"></use>
             </svg>
           </div>
 
@@ -678,9 +678,75 @@
         </p>
       </li>
     </ul>
-    <button class="review-btn" type="button">Leave a review</button>
+    <button class="review-btn btn js-open-modal" data-modal="1" type="button">
+      Leave a review
+    </button>
   </div>
 </section>
+<div class="reviews-modal modal" data-modal="1">
+  <button type="button" class="reviews-modal-close js-modal-close">
+    <svg class="reviews-modal-close-icon" width="24" height="24">
+      <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-x-close"></use>
+    </svg>
+  </button>
+  <h2 class="reviews-title">
+    leave a review <br />
+    about
+    <span class="reviews-title-accent">our chocolate</span>
+  </h2>
+  <form class="reviews-modal-form">
+    <div class="reviews-form-field">
+      <input
+        class="reviews-form-input"
+        name="user-name"
+        type="text"
+        id="user-name"
+        placeholder="Name"
+        required
+        minlength="3"
+      />
+    </div>
+    <div class="reviews-form-field">
+      <input
+        class="reviews-form-input"
+        name="user-mail"
+        type="email"
+        id="user-mail"
+        placeholder="Email"
+        required
+      />
+    </div>
+    <div class="reviews-form-field reviews-input-phone">
+      <div class="country">
+        <svg class="reviews-form-icon" width="32" height="32">
+          <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-flag"></use>
+        </svg>
+        <p class="country-cod">+380</p>
+      </div>
+      <input
+        class="reviews-form-input phone-input"
+        name="user-phone"
+        type="tel"
+        id="user-phone"
+        placeholder="| Fhone number"
+        pattern="[0-9]{5,7}"
+        required
+      />
+    </div>
+    <div class="reviews-form-field">
+      <textarea
+        class="reviews-text-area"
+        class="user-comment"
+        name="user-comment"
+        id="user-comment"
+        placeholder="Enter text"
+        minlength="6"
+        required
+      ></textarea>
+    </div>
+    <button class="reviews-modal-submit btn" type="submit">Send</button>
+  </form>
+</div>
 
       
 
@@ -719,7 +785,7 @@
               href="https://instagram.com/"
             >
               <svg class="footer-soc-icon" width="22" height="22">
-                <use href="/phoenix-team-project/assets/sprite-592c3da9.svg#icon-instagram"></use>
+                <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -730,7 +796,7 @@
               href="https://twitter.com/"
             >
               <svg class="footer-soc-icon" width="22" height="22">
-                <use href="/phoenix-team-project/assets/sprite-592c3da9.svg#icon-twitter"></use>
+                <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -756,7 +822,7 @@
   </div>
 </footer>
 
-    
+    <div class="overlay js-overlay-modal"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script
