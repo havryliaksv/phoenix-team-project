@@ -182,6 +182,9 @@
   padding-right: 8px;
   gap: 8px;
 }
+.country-cod {
+  font-family: Montserrat-500, sans-serif;
+}
 .reviews-text-area {
   width: 100%;
   height: 90px;
@@ -216,7 +219,27 @@
   color: var(--accent-color);
   background-color: #fcf1e0;
 }
-
+.feedback-modal {
+  position: relative;
+}
+.feedback-modal-close {
+  position: absolute;
+  padding: 0;
+  top: 28px;
+  right: 28px;
+  background-color: #fcf1e0;
+  border: none;
+  overflow: hidden;
+  border-radius: 50%;
+  color: var(--accent-color);
+}
+.feedback-modal-close-icon {
+  stroke: currentColor;
+}
+.feedback-modal-close:hover,
+.feedback-modal-close:focus {
+  color: var(--dark-color);
+}
 @media screen and (min-width: 768px) {
   .reviews-list .slick-dots {
     bottom: -45px;
@@ -232,6 +255,16 @@
 
     font-size: 18px;
     line-height: calc(22 / 18);
+  }
+  .reviews-modal.modal.active {
+    max-width: 517px;
+    padding: 40px;
+  }
+  .reviews-form-field:not(:last-child) {
+    margin-bottom: 19px;
+  }
+  .reviews-modal-submit {
+    padding: 14px 40px;
   }
 }
 
