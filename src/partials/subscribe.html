@@ -8,16 +8,31 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button class="subscribe-btn" type="button" js-open-modal>Subscribe</button>
-  </div>
-</section>
-<div class="backdrop is-hidden" data-modal>
-  <div class="subscribe-modal">
-    <button class="subscribe-btn-modal" type="button" js-modal-close>
-      <svg class="subscribe-icon" width="24" height="24">
-        <use href="./images/sprite.svg#icon-close"></use>
-      </svg>
+    <button class="subscribe-btn js-open-modal" data-modal="3" type="button">
+      Subscribe
     </button>
   </div>
+</section>
+
+<div class="subscribe-modal modal active" data-modal="3">
+  <button class="subscribe-btn-modal js-modal-close" type="button">
+    <svg class="subscribe-icon" width="24" height="24">
+      <use href="/img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <picture>
+    <source
+      srcset="/img/subscribe-img/subscribe-modal-mobile-min.jpg 1x ../img/subscribe-img/subscribe-modal-mobile-2x-min.jpg 2x"
+      media="(max-width: 767px)"
+    />
+    <source
+      srcset="../img/subscribe-img/subscribe-modal-tablet-min.jpg 1x ../img/subscribe-img/subscribe-modal-tablet-2x-min.jpg 2x"
+      media="(min-width: 768px)"
+    />
+    <img
+      src="../img/subscribe-img/subscribe-modal-mobile-min.jpg"
+      alt="new-chocolate"
+      class="subscribe-modal-img-img"
+    />
+  </picture>
 </div>
-<script src="./js/modal.js"></script>
