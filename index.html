@@ -14,7 +14,7 @@
     />
     
     <script type="module" crossorigin src="/phoenix-team-project/assets/index-53f14f6e.js"></script>
-    <link rel="stylesheet" href="/phoenix-team-project/assets/index-00ac5c8d.css">
+    <link rel="stylesheet" href="/phoenix-team-project/assets/index-2881a05a.css">
   </head>
   <body>
     <header id="home" class="header">
@@ -682,71 +682,84 @@
       Leave a review
     </button>
   </div>
-</section>
-<div class="reviews-modal modal" data-modal="1">
-  <button type="button" class="reviews-modal-close js-modal-close">
-    <svg class="reviews-modal-close-icon" width="24" height="24">
-      <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-x-close"></use>
-    </svg>
-  </button>
-  <h2 class="reviews-title">
-    leave a review <br />
-    about
-    <span class="reviews-title-accent">our chocolate</span>
-  </h2>
-  <form class="reviews-modal-form">
-    <div class="reviews-form-field">
-      <input
-        class="reviews-form-input"
-        name="user-name"
-        type="text"
-        id="user-name"
-        placeholder="Name"
-        required
-        minlength="3"
-      />
-    </div>
-    <div class="reviews-form-field">
-      <input
-        class="reviews-form-input"
-        name="user-mail"
-        type="email"
-        id="user-mail"
-        placeholder="Email"
-        required
-      />
-    </div>
-    <div class="reviews-form-field reviews-input-phone">
-      <div class="country">
-        <svg class="reviews-form-icon" width="32" height="32">
-          <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-flag"></use>
-        </svg>
-        <p class="country-cod">+380</p>
+  <div class="reviews-modal modal" data-modal="1">
+    <button type="button" class="reviews-modal-close js-modal-close">
+      <svg class="reviews-modal-close-icon" width="24" height="24">
+        <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <h2 class="reviews-title">
+      leave a review <br />
+      about
+      <span class="reviews-title-accent">our chocolate</span>
+    </h2>
+    <form class="reviews-modal-form">
+      <div class="reviews-form-field">
+        <input
+          class="reviews-form-input"
+          name="user-name"
+          type="text"
+          id="user-name"
+          placeholder="Name"
+          required
+          minlength="3"
+        />
       </div>
-      <input
-        class="reviews-form-input phone-input"
-        name="user-phone"
-        type="tel"
-        id="user-phone"
-        placeholder="| Fhone number"
-        pattern="[0-9]{5,7}"
-        required
-      />
-    </div>
-    <div class="reviews-form-field">
-      <textarea
-        class="reviews-text-area"
-        class="user-comment"
-        name="user-comment"
-        id="user-comment"
-        placeholder="Enter text"
-        minlength="6"
-        required
-      ></textarea>
-    </div>
-    <button class="reviews-modal-submit btn" type="submit">Send</button>
-  </form>
-</div>
+      <div class="reviews-form-field">
+        <input
+          class="reviews-form-input"
+          name="user-mail"
+          type="email"
+          id="user-mail"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div class="reviews-form-field reviews-input-phone">
+        <div class="country">
+          <svg class="reviews-form-icon" width="32" height="32">
+            <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-flag"></use>
+          </svg>
+          <p class="country-cod">+380</p>
+        </div>
+        <input
+          class="reviews-form-input phone-input"
+          name="user-phone"
+          type="tel"
+          id="user-phone"
+          placeholder="| Fhone number"
+          pattern="[0-9]{5,7}"
+          required
+        />
+      </div>
+      <div class="reviews-form-field">
+        <textarea
+          class="reviews-text-area"
+          class="user-comment"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Enter text"
+          minlength="6"
+          required
+        ></textarea>
+      </div>
+      <button
+        class="reviews-modal-submit btn js-open-modal"
+        data-modal="2"
+        type="submit"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+  <div class="feedback-modal modal" data-modal="2">
+    <button type="button" class="feedback-modal-close js-modal-close btn">
+      <svg class="feedback-modal-close-icon" width="28" height="28">
+        <use href="/phoenix-team-project/assets/sprite-f2697fba.svg#icon-x-close"></use>
+      </svg>
+    </button>
+  </div>
+</section>
 
       
 
