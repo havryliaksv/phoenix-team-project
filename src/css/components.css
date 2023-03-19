@@ -1,9 +1,6 @@
 .components-section {
-    width: 100%;
-    max-width: 335px;
-    padding: 72px 15px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
 }
 
 .components-title {
@@ -105,37 +102,25 @@
 }
 
 .components-card-front {
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
   height: 270px;
-  /* transform: perspective(600px) rotateY(0deg);
-  backface-visibility: hidden;
-  transition: transform .6s linear; */
-}
-/* 
-.components-item > .components-card-front:is(:hover, :focus) {
-  transform: perspective(600px) rotateY(-180deg);
 }
 
-.components-item > .components-card-back:is(:hover, :focus) {
-    transform: perspective(600px) rotateY(0deg);
-} */
-.center {
+.components-card-front:is(:hover, :focus) .components-card-back {
+    transform: translateY(0);
+}
+
+.components-card-back{
     position: absolute;
-}
-
-.components-card-back {
-  position: absolute;
-  overflow: hidden;
-  width: 279px;
-  height: 270px;
-  padding: 28px;
-  background-color: var(--light-color);
-  overflow: scroll;
-  transform: translateY(100%);
-  transition: transform .6s linear;
-  /* transform: perspective(600px) rotateY(180deg);
-  backface-visibility: hidden;
-  transition: transform .6s linear; */
+    top: 0;
+    height: 270px;
+    background-color: var(--light-color);
+    transform: translateY(100%);
+    overflow: scroll;
+    padding: 28px;
+    transition: .6s var(--timing-function);
 }
 
 .components-card-name {
