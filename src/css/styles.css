@@ -129,8 +129,5 @@ body {
   width: 28px;
   background-image: url(/img/active-dot.svg);
 }
-.slick-track {
-  display: flex;
-  align-items: flex-start;
-}
+
 
