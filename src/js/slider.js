@@ -36,7 +36,7 @@ $(function () {
 $(function () {
   $('.products-list').slick({
     dots: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     mobileFirst: true,
     responsive: [
@@ -52,7 +52,6 @@ $(function () {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          centerMode: true,
           variableWidth: true,
         },
       },
