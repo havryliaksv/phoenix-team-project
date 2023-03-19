@@ -1,4 +1,4 @@
-<section class="top-sellers">
+<section class="top-sellers" id="sellers">
   <div class="conteiner">
     <div class="conteiner"></div>
     <h2 class="title-sellers"><span class="sellers-span">TOP </span>SELLERS</h2>
@@ -7,25 +7,25 @@
         <picture class="sellers-pic">
           <source
             srcset="
-              ../img/sellers-img/top-1-desk.webp    1x,
-              ../img/sellers-img/top-1-desk@2x.webp 2x
+              ./img/sellers-img/top-1-desk.webp    1x,
+              ./img/sellers-img/top-1-desk@2x.webp 2x
             "
             media="(min-width: 1200px)"
           />
           <source
             srcset="
-              ../img/sellers-img/top-1-tablet.webp    1x,
-              ../img/sellers-img/top-1-tablet@2x.webp 2x
+              ./img/sellers-img/top-1-tablet.webp    1x,
+              ./img/sellers-img/top-1-tablet@2x.webp 2x
             "
             media="(min-width: 768px)"
           />
           <source
-            srcset="../img/sellers-img/top-1-mob@2x.webp 2x"
+            srcset="./img/sellers-img/top-1-mob@2x.webp 2x"
             media="(max-width: 767px)"
           />
           <img
             class="sellers-img"
-            src="../img/sellers-img/top-1-mob.webp 1x"
+            src="./img/sellers-img/top-1-mob.webp 1x"
             alt="nuts chocolate"
           />
         </picture>
@@ -39,25 +39,25 @@
         <picture class="sellers-pic">
           <source
             srcset="
-              ../img/sellers-img/top-2-desk.webp    1x,
-              ../img/sellers-img/top-2-desk@2x.webp 2x
+              ./img/sellers-img/top-2-desk.webp    1x,
+              ./img/sellers-img/top-2-desk@2x.webp 2x
             "
             media="(min-width: 1200px)"
           />
           <source
             srcset="
-              ../img/sellers-img/top-2-tablet.webp    1x,
-              ../img/sellers-img/top-2-tablet@2x.webp 2x
+              ./img/sellers-img/top-2-tablet.webp    1x,
+              ./img/sellers-img/top-2-tablet@2x.webp 2x
             "
             media="(min-width: 768px)"
           />
           <source
-            srcset="../img/sellers-img/top-2-mob@2x.webp 2x"
+            srcset="./img/sellers-img/top-2-mob@2x.webp 2x"
             media="(max-width: 767px)"
           />
           <img
             class="sellers-img"
-            src="../img/sellers-img/top-2-mob.webp 1x"
+            src="./img/sellers-img/top-2-mob.webp 1x"
             alt="milk chocolate"
           />
         </picture>
@@ -65,12 +65,12 @@
       <li class="sellers-item current">
         <picture class="sellers-pic">
           <source
-            srcset="../img/sellers-img/top-3-desk@2x.webp 2x"
+            srcset="./img/sellers-img/top-3-desk@2x.webp 2x"
             media="(min-width: 1200px)"
           />
           <img
             class="sellers-img"
-            src="../img/sellers-img/top-3-desk.webp 1x"
+            src="./img/sellers-img/top-3-desk.webp 1x"
             alt="dark chocolate"
           />
         </picture>
@@ -86,6 +86,45 @@
     </div>
   </div>
 </section>
+<!-- section tOp Sellers-->
 
-<!-- 
-section tOp Sellers-->
+<!-- modal: Explore our new chocolate first -->
+
+<div class="backdrop">
+  <div class="modal-submit-conteiner">
+    <div class="submit-top-div">
+      <button type="button" class="modal-submit-close-btn js-close-menu">
+        <svg class="modal-submit-close-icon" width="28" height="28">
+          <use
+            class="icon-close"
+            href="../img/sellers-img/chocolate.svg/#icon-close"
+          ></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="submit-bottom-div">
+      <p class="modal-submit-text">
+        Explore our<span class="modal-submit-span">new chocolate</span
+        >&nbsp;first!
+      </p>
+
+      <form class="modal-submit-form">
+        <label class="modal-submit-lab">
+          <div class="div-help">
+            <input
+              type="email"
+              name="user-mail"
+              class="modal-submit-input"
+              required
+              pattern="[a-zA-Z]+"
+              minlength="2"
+              placeholder="Enter your email"
+            />
+            <button type="submit" class="submit">Submit</button>
+          </div>
+        </label>
+      </form>
+    </div>
+  </div>
+</div>
