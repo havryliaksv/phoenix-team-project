@@ -107,8 +107,15 @@
   color: var(--light-color);
   background-color: var(--accent-color);
 }
+.reviews-modal {
+  transition: transform 250ms var(--timeing-function);
+}
+.reviews-modal.modal {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
 .reviews-modal.modal.active {
-  transform: translate3d(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   overflow: auto;
 
   width: calc(100% - 2 * 15px);
@@ -117,10 +124,6 @@
 
   background-color: var(--light-background-color);
   border-radius: 15px;
-}
-.reviews-modal.modal. {
-  transform: scale(1.25);
-  transition: transform 250ms var(--timeing-function);
 }
 
 .reviews-modal-close {
