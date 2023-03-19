@@ -63,11 +63,25 @@
   background-color: #1e1823;
   z-index: 2;
   overflow-y: auto;
+
+  animation-name: slideIn;
+  animation-duration: 500ms;
+  animation-timing-function: var(--timing-function);
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideIn {
+  from {
+    right: -220px;
+  }
+  to {
+    right: 0;
+  }
 }
 
 .close-btn {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   display: flex;
@@ -163,7 +177,6 @@
   }
 
   .close-btn {
-    position: fixed;
     top: 24px;
     right: 32px;
     width: 32px;
