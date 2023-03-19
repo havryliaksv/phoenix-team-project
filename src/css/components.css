@@ -1,1 +1,179 @@
+.components-section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
 
+.components-title {
+    display: block;
+    font-family: Montserrat-600, sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    padding-bottom: 24px;
+}
+
+.components-title-span {
+    color: var(--accent-color);
+}
+
+.components-text {
+    display: block;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--dark-color);
+    padding-bottom: 32px;
+}
+
+.components-list {
+    display: block;
+}
+
+.components-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 270px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.components-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.components-item:nth-child(1) {
+    background-color: var(--accent-color);
+
+}
+
+.components-item:nth-child(2) {
+    background-color: var(--light-color);  
+    border: 1px solid #FD9222;
+}
+
+.components-item:nth-child(3) {
+    background-color: var(--dark-background-color);
+
+}
+
+.components-item:nth-child(4) {
+    background-color: var(--light-color);
+    border: 1px solid #FD9222;
+}
+
+.components-img{
+    width: 224px;
+    height: 171px;
+    margin-top: 28px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.components-img-name {
+   margin-left: 24px;
+   margin-bottom: 24px;
+   font-family: Montserrat-600, sans-serif;
+   font-size: 14px;
+   line-height: 1.29;
+   letter-spacing: -0.02em;
+}
+
+.components-item:nth-child(1) .components-img-name {
+   color: var(--light-color);
+}
+
+.components-item:nth-child(2) .components-img-name {
+   color: var(--dark-color);
+}
+
+.components-item:nth-child(3) .components-img-name {
+    color: var(--light-color);
+}
+
+.components-item:nth-child(4) .components-img-name {
+    color: var(--dark-color);
+}
+
+.components-card-front {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 270px;
+}
+
+.components-card-front:is(:hover, :focus) .components-card-back {
+    transform: translateY(0);
+}
+
+.components-card-back{
+    position: absolute;
+    top: 0;
+    height: 270px;
+    background-color: var(--light-color);
+    transform: translateY(100%);
+    overflow: scroll;
+    padding: 28px;
+    transition: .6s var(--timing-function);
+}
+
+.components-card-name {
+    font-family: Montserrat-600, sans-serif;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+}
+
+.components-card-text {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--dark-color);
+}
+
+.components-card-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 14px;
+}
+
+.components-card-igradient {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+    width: 81px;
+    height: 24px;
+    background-color: var(--accent-color);
+    border-radius: 35px;
+    margin-right: 6px;
+    font-size: 10px;
+    line-height: 1.2;
+    color: var(--light-color);   
+}
+
+.components-card-benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 93px;
+    height: 24px;
+    background: var(--light-background-color);   
+    border: 1px solid var(--accent-color);
+    border-radius: 35px;
+
+    font-size: 10px;
+    line-height: 1.2;
+
+}
