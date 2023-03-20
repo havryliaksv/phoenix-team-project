@@ -1,17 +1,126 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./slick.css');
+@import url('./slick-theme.css');
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./advantages.css');
+@import url('./components.css');
+@import url('./production.css');
+@import url('./products.css');
+@import url('./sellers.css');
+@import url('./reviews.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
+@import url('./overlay.css');
+
+@font-face {
+    font-family: Montserrat-700;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-700-Italic;
+    src: url(../fonts/Montserrat-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-600;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-500;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-400;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-400;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --light-color: #ffffff;
+    --dark-color: #111111;
+    --accent-color: #fd9222;
+    --light-background-color: #fafafa;
+    --dark-background-color: #1e1823;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+body {
+    font-family: Montserrat-400, sans-serif;
+    color: var(--dark-color);
+
+    background-color: var(--light-background-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 365px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 734px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1166px;
+    }
+}
+
 
  /* section tOp Sellers */
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 375px;
-}
 
 .top-sellers {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 72px;
+    padding-bottom: 128px;
+    padding-top: 128px;
+   
 
 }
 
@@ -123,12 +232,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
-    .conteiner {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
     .top-sellers {
         padding-bottom: 100px;
     }
@@ -199,12 +302,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .conteiner {
-        max-width: 1200px;
-        padding-left: 32px;
-        padding-right: 32px;
-        
-    }
 
     .top-sellers {
         padding-bottom: 128px;
@@ -299,7 +396,7 @@
     }
 
     .submit-top-div {
-
+        z-index: 1;
         max-width: 311px;
         width: 100%;
         height: 169px;
@@ -317,21 +414,32 @@
         }
     }
 
-    .modal-submit-close-btn {
-            position: absolute;
-            z-index: 999;
-            top: 15px;
-            right: 14px;
-    
-    
-            border: 2px solid #FFFFFF;
-            background-color: transparent;
-            border-color: transparent;
-        }
+
+
+.modal-submit-close-btn {
+    position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        top: 15px;
+        right: 14px;
+        width: 28px;
+        height: 28px;
+        border: 2px solid #FFFFFF;
+}
+
+.modal-submit-close-icon {
+
+}
 
 .submit-bottom-div {
     padding-left: 24px;
     padding-right: 24px;
+}
+
+.icon-close {
+    
 }
 
    .modal-submit-text {
@@ -468,14 +576,15 @@
     }
 
 .modal-submit-close-btn {
-    position: absolute;
+position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 999;
     top: 31px;
     right: 31px;
-
-
-    
-
+    width: 28px;
+    height: 28px;
     border: 2px solid #FFFFFF;
     background-color: transparent;
     border-color: transparent;
