@@ -15,14 +15,13 @@
 }
 
 .products {
-  padding-bottom: 100px;
+  padding-bottom: 72px;
 }
 
 .products-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
 }
 
 .products-list-item {
@@ -78,6 +77,10 @@
   gap: 18px;
 }
 
+.slick-dots {
+  position: static;
+}
+
 @media screen and (min-width: 768px) {
   .products-list-item {
     padding: 32px 20px 32px 20px;
@@ -86,7 +89,7 @@
     margin-bottom: 50px;
   }
   .products {
-    padding-bottom: 128px;
+    padding-bottom: 100px;
   }
   .products-list .slick-track {
     margin-bottom: 32px;
@@ -101,6 +104,6 @@
     margin-bottom: 50px;
   }
   .products {
-    padding-bottom: 156px;
+    padding-bottom: 128px;
   }
 }
