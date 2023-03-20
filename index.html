@@ -13,8 +13,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/phoenix-team-project/assets/index-f9aaf08f.js"></script>
-    <link rel="stylesheet" href="/phoenix-team-project/assets/index-7e959729.css">
+    <script type="module" crossorigin src="/phoenix-team-project/assets/index-c8c94255.js"></script>
+    <link rel="stylesheet" href="/phoenix-team-project/assets/index-b7dd234b.css">
   </head>
   <body>
     <header id="home" class="header">
@@ -86,7 +86,192 @@
 </html>
 
     <main>
-      
+      <!-- Section HERO -->
+<section class="hero">
+  <div class="hero__overlay">
+    <div class="container container-hero">
+      <h1 class="hero__title visually-hidden">buy chocolate</h1>
+      <div class="hero__item">
+        <h2 class="hero__text">
+          Treat yourself or a loved one to our finest ingredients for a moment
+          of pure delight!
+        </h2>
+        <div class="hero__group">
+          <ul class="hero__group-ul">
+            <li>
+              <button class="hero__btn-buy" type="button">Buy now</button>
+            </li>
+            <li class="hero__anchor-howmade">
+              <a href="#production" class="hero__link-howmade">How it’s made</a>
+            </li>
+          </ul>
+          <div class="hero__anchor-footer">
+            <a href="#footer" class="hero__link-footer"
+              ><span class="qqqq">scroll down</span>
+              <div class="hero__svg-size">
+                <svg class="hero__svg-footer" width="16" height="16">
+                  <use href="../img/sprite-hero.svg#icon-anchor-footer"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAl BUY NOW -->
+
+<div class="hero-modal" id="buy-now-modal">
+  <div class="hero-modal__buy">
+    <button class="hero-modal__close">
+      <svg class="hero-modal__close-svg" >
+        <use href="../img/sprite-hero.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <form class="hero-modal__form">
+      <p class="hero-modal__title">
+        buy <span class="hero-modal__title2">now</span>
+      </p>
+      <ul class="hero-modal__list">
+        <li class="hero-modal__item">
+          <img src="../img/hero-modal-buy-img/kisspng-chocolate-100g-mobile.png" alt="chocolate 100 gram">
+          <p class="hero-modal__text-card">100 g</p>
+        </li>
+        <li class="hero-modal__item">
+          <img src="../img/hero-modal-buy-img/kisspng-chocolate-200g-mobile.png"  alt="chocolate 200 gram">
+          <p class="hero-modal__text-card hero-modal__text-card2">200 g</p>
+        </li>
+        <li class="hero-modal__item">
+          <img src="../img/hero-modal-buy-img/kisspng-chocolate-300g-mobile.png"  alt="chocolate 300 gram">
+          <p class="hero-modal__text-card hero-modal__text-card3">300 g</p>
+        </li>
+      </ul>
+
+      <label class="hero-modal__label">
+        <span class="hero-modal__text">Personal information</span>
+        <span>
+          <input
+            type="text"
+            class="hero-modal__input"
+            name="user_name"
+            pattern="[a-zA-Zа-яА-Яїі]+$"
+            minlength="2"
+            placeholder="Name"
+            required
+          />
+        </span>
+      </label>
+      <label class="hero-modal__label">
+        <span>
+          <input
+            type="text"
+            class="hero-modal__input"
+            name="user_surname"
+            pattern="[a-zA-Zа-яА-Яїі]+$"
+            minlength="2"
+            placeholder="Surname"
+            required
+          />
+        </span>
+      </label>
+      <label class="hero-modal__label">
+        <span class="hero-modal__text">Email</span>
+        <span>
+          <input
+            type="email"
+            class="hero-modal__input"
+            name="user_mail"
+            pattern="[a-zA-Zа-яА-Яїі]+$"
+            minlength="2"
+            placeholder="Enter your email"
+            required
+          />
+        </span>
+      </label>
+      <label class="hero-modal__label">
+        <span class="hero-modal__text">Phone number</span>
+        <span class="hero-modal__control-tel">
+          <div class="hero-modal__phone-group">
+            <svg class="hero-modal__phone-svg" width="24px" height="24px">
+              <use href="../img/sprite-hero.svg#icon-ukraine"></use>
+            </svg>
+            <p class="hero-modal__phone-380">+380</p>
+          </div>
+          <input
+            type="tel"
+            class="hero-modal__input hero-modal__input-tel"
+            name="user_phone"
+            pattern="[0-9]+"
+            minlength="2"
+            placeholder="Phone number"
+            required
+          />
+        </span>
+      </label>
+      <label class="hero-modal__label">
+        <span class="hero-modal__text">Card number</span>
+        <span class="hero-modal__control-card">
+          <input
+            type="text"
+            class="hero-modal__input"
+            name="user_card"
+            pattern="[0-9]+"
+            minlength="2"
+            placeholder="Enter card"
+            required
+          />
+          <svg class="hero-modal__card-svg" width="32px" height="21px">
+            <use href="../img/sprite-hero.svg#icon-bank"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="hero-modal__label">
+        <span class="hero-modal__text">Comment</span>
+        <span>
+          <textarea
+            name="user_name"
+            class="hero-modal__form-textarea"
+            placeholder="Enter text"
+          ></textarea>
+        </span>
+      </label>
+      <button type="button" class="hero-modal__submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- MODAL THANK YOU -->
+
+<div class="modal-thank" id="thank-you-modal">
+    <div class="modal-thank__you">
+      <button type="button" class="modal-thank__close">
+        <svg class="modal-thank__close-svg" width="28" height="28">
+          <use href="/phoenix-team-project/assets/sprite-hero-06e377b4.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+      <h2 class="modal-thank__title">
+        THANK YOU!
+      </h2>
+      <p class="modal-thank__text">We are glad that you ordered our chocolate and we are giving you a 20% discount on all our products.</p>
+      <div class="modal-thank__bgd">
+        <picture>
+          <source
+            srcset="/phoenix-team-project/assets/choko-tab-563490a5.png 1x, /phoenix-team-project/assets/choko-tab@2x-08ad3bd8.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/phoenix-team-project/assets/choko-mob-daeab049.png 1x, /phoenix-team-project/assets/choko-mob@2x-b8a44c37.png 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/phoenix-team-project/assets/choko-tab-563490a5.png" alt="chocolate" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section class="advantages-section">
   <div class="container">
