@@ -80,15 +80,17 @@ $(function () {
       {
         breakpoint: 1200,
         settings: {
+          dots: false,
           slidesToShow: 3,
-          
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 768,
         settings: {
+          dots: false,
           slidesToShow: 3,
-          
+          slidesToScroll: 1,
         },
       },
       {
