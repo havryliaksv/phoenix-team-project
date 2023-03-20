@@ -22,7 +22,7 @@
               ><span class="qqqq">scroll down</span>
               <div class="hero__svg-size">
                 <svg class="hero__svg-footer" width="16" height="16">
-                  <use href="../img/sprite-hero.svg#icon-anchor-footer"></use>
+                  <use href="./img/sprite-hero.svg#icon-anchor-footer"></use>
                 </svg>
               </div>
             </a>
@@ -35,11 +35,11 @@
 
 <!-- MODAl BUY NOW -->
 
-<div class="hero-modal" id="buy-now-modal">
+<div class="hero-modal " id="buy-now-modal">
   <div class="hero-modal__buy">
     <button class="hero-modal__close">
       <svg class="hero-modal__close-svg" >
-        <use href="../img/sprite-hero.svg#icon-close-modal"></use>
+        <use href="./img/sprite-hero.svg#icon-close-modal"></use>
       </svg>
     </button>
     <form class="hero-modal__form">
@@ -48,15 +48,61 @@
       </p>
       <ul class="hero-modal__list">
         <li class="hero-modal__item">
-          <img src="../img/hero-modal-buy-img/kisspng-chocolate-100g-mobile.png" alt="chocolate 100 gram">
+          <picture>
+              <source
+                srcset="
+                  ./img/hero-modal-buy-img/kisspng-chocolate-100g-mobile.webp    1x,
+                  ./img/hero-modal-buy-img/kisspng-chocolate-100g-mobile@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./img/hero-modal-buy-img/kisspng-chocolate-100g-mobile.png    1x,
+                  ./img/hero-modal-buy-img/kisspng-chocolate-100g-mobile@2x.png 2x
+                "
+              />
+              <img src="./img/hero-modal-buy-img/kisspng-chocolate-100g-mobile.png" alt="chocolate 100 gram">
+            </picture>
+          
           <p class="hero-modal__text-card">100 g</p>
         </li>
         <li class="hero-modal__item">
-          <img src="../img/hero-modal-buy-img/kisspng-chocolate-200g-mobile.png"  alt="chocolate 200 gram">
+          <picture>
+              <source
+                srcset="
+                  ./img/hero-modal-buy-img/kisspng-chocolate-200g-mobile.webp    1x,
+                  ./img/hero-modal-buy-img/kisspng-chocolate-200g-mobile@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./img/hero-modal-buy-img/kisspng-chocolate-200g-mobile.png    1x,
+                  ./img/hero-modal-buy-img/kisspng-chocolate-200g-mobile@2x.png 2x
+                "
+              />
+              <img src="./img/hero-modal-buy-img/kisspng-chocolate-200g-mobile.png" alt="chocolate 100 gram">
+            </picture>
           <p class="hero-modal__text-card hero-modal__text-card2">200 g</p>
         </li>
         <li class="hero-modal__item">
-          <img src="../img/hero-modal-buy-img/kisspng-chocolate-300g-mobile.png"  alt="chocolate 300 gram">
+          <picture>
+              <source
+                srcset="
+                  ./img/hero-modal-buy-img/kisspng-chocolate-300g-mobile.webp    1x,
+                  ./img/hero-modal-buy-img/kisspng-chocolate-300g-mobile@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./img/hero-modal-buy-img/kisspng-chocolate-300g-mobile.png    1x,
+                  ./img/hero-modal-buy-img/kisspng-chocolate-300g-mobile@2x.png 2x
+                "
+              />
+              <img src="./img/hero-modal-buy-img/kisspng-chocolate-300g-mobile.png" alt="chocolate 100 gram">
+            </picture>
           <p class="hero-modal__text-card hero-modal__text-card3">300 g</p>
         </li>
       </ul>
@@ -107,7 +153,7 @@
         <span class="hero-modal__control-tel">
           <div class="hero-modal__phone-group">
             <svg class="hero-modal__phone-svg" width="24px" height="24px">
-              <use href="../img/sprite-hero.svg#icon-ukraine"></use>
+              <use href="./img/sprite-hero.svg#icon-ukraine"></use>
             </svg>
             <p class="hero-modal__phone-380">+380</p>
           </div>
@@ -135,7 +181,7 @@
             required
           />
           <svg class="hero-modal__card-svg" width="32px" height="21px">
-            <use href="../img/sprite-hero.svg#icon-bank"></use>
+            <use href="./img/sprite-hero.svg#icon-bank"></use>
           </svg>
         </span>
       </label>
