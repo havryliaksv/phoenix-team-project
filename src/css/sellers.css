@@ -1,17 +1,14 @@
 
  /* section tOp Sellers */
-.container {
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 375px;
-}
 
 .top-sellers {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 72px;
+    padding-bottom: 128px;
+    padding-top: 128px;
+   
 
 }
 
@@ -123,12 +120,6 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
-    .conteiner {
-        max-width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
     .top-sellers {
         padding-bottom: 100px;
     }
@@ -199,12 +190,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .conteiner {
-        max-width: 1200px;
-        padding-left: 32px;
-        padding-right: 32px;
-        
-    }
 
     .top-sellers {
         padding-bottom: 128px;
@@ -299,7 +284,7 @@
     }
 
     .submit-top-div {
-
+        z-index: 1;
         max-width: 311px;
         width: 100%;
         height: 169px;
@@ -317,21 +302,32 @@
         }
     }
 
-    .modal-submit-close-btn {
-            position: absolute;
-            z-index: 999;
-            top: 15px;
-            right: 14px;
-    
-    
-            border: 2px solid #FFFFFF;
-            background-color: transparent;
-            border-color: transparent;
-        }
+
+
+.modal-submit-close-btn {
+    position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        top: 15px;
+        right: 14px;
+        width: 28px;
+        height: 28px;
+        border: 2px solid #FFFFFF;
+}
+
+.modal-submit-close-icon {
+
+}
 
 .submit-bottom-div {
     padding-left: 24px;
     padding-right: 24px;
+}
+
+.icon-close {
+    
 }
 
    .modal-submit-text {
@@ -468,14 +464,15 @@
     }
 
 .modal-submit-close-btn {
-    position: absolute;
+position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 999;
     top: 31px;
     right: 31px;
-
-
-    
-
+    width: 28px;
+    height: 28px;
     border: 2px solid #FFFFFF;
     background-color: transparent;
     border-color: transparent;
