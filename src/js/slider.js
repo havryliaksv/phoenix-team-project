@@ -1,5 +1,6 @@
 $(function () {
   $('.reviews-list').slick({
+    arrows: false,
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -35,6 +36,7 @@ $(function () {
 
 $(function () {
   $('.products-list').slick({
+    arrows: false,
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -69,9 +71,9 @@ $(function () {
   });
 });
 
-
 $(function () {
   $('.hero-modal__list').slick({
+    arrows: false,
     dots: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -94,7 +96,7 @@ $(function () {
         },
       },
       {
-        breakpoint: 374,
+        breakpoint: 375,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

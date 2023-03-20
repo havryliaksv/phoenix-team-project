@@ -182,6 +182,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
   background: rgb(27 29 31 / 70%);
   /* display: flex;
   align-items: center;
