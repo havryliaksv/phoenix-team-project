@@ -301,6 +301,13 @@
   bottom: 0;
 }
 @media screen and (min-width: 768px) {
+  .reviews-title {
+    margin-bottom: 50px;
+
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
   .reviews-list .slick-dots {
     bottom: -45px;
   }
