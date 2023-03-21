@@ -84,7 +84,8 @@ padding: 20px 14px;
     }
 
     .production-title {
-        line-height: 1.4;
+        font-size: 24px;
+        line-height: 1.16;
     }
 
     .production-video {
