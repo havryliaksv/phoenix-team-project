@@ -48,35 +48,25 @@
 }
 
 .js-menu-container {
-  display: none;
-}
-
-.js-menu-container.is-open {
   position: fixed;
   display: block;
   top: 0;
   right: 0;
   width: 220px;
-  height: 100%;
+  height: 100vh;
   padding: 20px;
   padding-top: 136px;
   background-color: #1e1823;
   z-index: 2;
   overflow-y: auto;
 
-  animation-name: slideIn;
-  animation-duration: 500ms;
-  animation-timing-function: var(--timing-function);
-  animation-fill-mode: forwards;
+  transform: translateX(100%);
+
+  transition: transform 500ms var(--timing-function);
 }
 
-@keyframes slideIn {
-  from {
-    right: -220px;
-  }
-  to {
-    right: 0;
-  }
+.js-menu-container.is-open {
+  transform: translateX(0);
 }
 
 .close-btn {
@@ -168,10 +158,9 @@
     height: 32px;
   }
 
-  .js-menu-container.is-open {
+  .js-menu-container {
     width: 290px;
     height: 100%;
-    padding: 20px;
     padding: 156px 32px 24px;
     background-color: #1e1823;
   }
@@ -233,10 +222,20 @@
 
   .js-menu-container {
     display: block;
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    transform: none;
+    transition: none;
+    overflow-y: hidden;
   }
 
   .header-list {
     flex-direction: row;
+    margin-left: 0;
+    width: 532px;
   }
 
   .close-btn {

@@ -199,6 +199,113 @@
         </p>
       </li>
     </ul>
-    <button class="review-btn" type="button">Leave a review</button>
+    <button class="review-btn btn" id="review-btn" type="button">
+      Leave a review
+    </button>
+  </div>
+  <div class="modal-bgd" id="reviews-modal">
+    <div class="reviews-modal">
+      <button type="button" class="reviews-modal-close">
+        <svg class="reviews-modal-close-icon" width="24" height="24">
+          <use href="./img/sprite.svg#icon-x-close"></use>
+        </svg>
+      </button>
+      <h2 class="reviews-title">
+        leave a review <br />
+        about
+        <span class="reviews-title-accent">our chocolate</span>
+      </h2>
+      <form class="reviews-modal-form" id="reviews-modal-form">
+        <div class="reviews-form-field">
+          <input
+            class="reviews-form-input"
+            name="user-name"
+            type="text"
+            id="user-name"
+            placeholder="Name"
+            required
+            minlength="3"
+          />
+        </div>
+        <div class="reviews-form-field">
+          <input
+            class="reviews-form-input"
+            name="user-mail"
+            type="email"
+            id="user-mail"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="reviews-form-field reviews-input-phone">
+          <div class="country">
+            <svg class="reviews-form-icon" width="32" height="32">
+              <use href="./img/sprite.svg#icon-flag"></use>
+            </svg>
+            <p class="country-cod">+380</p>
+          </div>
+          <input
+            class="reviews-form-input phone-input"
+            name="user-phone"
+            type="tel"
+            id="user-phone"
+            placeholder="Fhone number"
+            pattern="[0-9]{5,7}"
+            required
+          />
+        </div>
+        <div class="reviews-form-field">
+          <textarea
+            class="reviews-text-area"
+            class="user-comment"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Enter text"
+            minlength="6"
+            required
+          ></textarea>
+        </div>
+        <button
+          class="reviews-modal-submit btn"
+          id="reviews-modal-submit"
+          type="submit"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="modal-bgd" id="feedback-modal">
+    <div class="feedback-modal">
+      <button type="button" class="reviews-modal-close feedback-modal-close">
+        <svg class="feedback-modal-close-icon" width="28" height="28">
+          <use href="./img/sprite.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+      <h2 class="feedback-title">
+        THANK YOU <br />
+        FOR YOUR FEEDBACK!
+      </h2>
+      <p class="feedback-text">We are so happy to hear from you!</p>
+      <div class="feedback-bgd">
+        <picture>
+          <source
+            srcset="
+              ./img/reviews-img/choko-tab.png    1x,
+              ./img/reviews-img/choko-tab@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/reviews-img/choko-mob.png    1x,
+              ./img/reviews-img/choko-mob@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img src="./img/reviews-img/choko-tab.png" alt="chololet" />
+        </picture>
+      </div>
+    </div>
   </div>
 </section>

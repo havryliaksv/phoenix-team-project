@@ -15,19 +15,18 @@
 }
 
 .products {
-  margin-top: 72px;
+  padding-bottom: 72px;
 }
 
 .products-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px;
 }
 
 .products-list-item {
-  height: 100%;
-  padding: 32px 52px 32px 53px;
+  padding: 32px 52px 32px 52px;
+  margin: 0;
   text-align: center;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -35,11 +34,7 @@
 }
 
 .products-image {
-  width: 230px;
-  height: 201px;
   margin-bottom: 8px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .chocolate-title {
@@ -65,10 +60,6 @@
   color: rgba(17, 17, 17, 0.7);
 }
 
-.products-div {
-  width: 100%;
-}
-
 .products-button {
   padding: 8px 20px;
 
@@ -81,6 +72,15 @@
   border-radius: 100px;
 }
 
+.products-list .slick-track {
+  margin-bottom: 20px;
+  gap: 18px;
+}
+
+.slick-dots {
+  position: static;
+}
+
 @media screen and (min-width: 768px) {
   .products-list-item {
     padding: 32px 20px 32px 20px;
@@ -89,7 +89,10 @@
     margin-bottom: 50px;
   }
   .products {
-    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+  .products-list .slick-track {
+    margin-bottom: 32px;
   }
 }
 
@@ -101,6 +104,6 @@
     margin-bottom: 50px;
   }
   .products {
-    margin-top: 128px;
+    padding-bottom: 128px;
   }
 }
