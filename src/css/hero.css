@@ -328,6 +328,9 @@
     height: 196px;
     padding: 24px 20px;
   }
+  .hero-modal__list .slick-track {
+    gap: 16px;
+  }
 }
 
 .hero-modal__text-card {
