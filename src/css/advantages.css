@@ -13,7 +13,6 @@
 
 @media (max-width: 768px) {
     .advantages {
-        width: 375px;
         padding: 29px 5px;
         row-gap: 29px;
     }
@@ -21,7 +20,6 @@
 
 @media (min-width: 768px) and (max-width: 1200px) {
     .advantages {
-        width: 768px;
         padding: 50px 17px;
         gap: 41px 60px;
     }
@@ -29,7 +27,6 @@
 
 @media (min-width: 1200px) {
     .advantages {
-        width: 1200px;
         padding: 50px 35px;
         column-gap: 70px;
     }
