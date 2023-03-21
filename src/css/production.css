@@ -76,7 +76,7 @@ padding: 20px 14px;
 
 @media screen and (min-width: 768px) {
     .production .container {
-        max-width: 614px;
+        max-width: 644px;
     }
 
     .production {
@@ -103,7 +103,7 @@ padding: 20px 14px;
 
 @media screen and (min-width: 1200px) {
     .production .container {
-            max-width: 1136px;
+            max-width: 1166px;
         }
 
     .production {
