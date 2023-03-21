@@ -140,6 +140,9 @@
   justify-content: space-between;
   margin-bottom: 32px;
 }
+.hero-modal__label {
+  margin-bottom: 8px;
+}
 
 @media screen and (min-width: 768px) {
   .hero__group {
@@ -151,6 +154,10 @@
   .hero__group-ul {
     gap: 14px;
     margin-bottom: 0px;
+  }
+  .hero-modal-wrap {
+    display: flex;
+    gap: 21px;
   }
 }
 
@@ -449,6 +456,7 @@
 
 @media screen and (min-width: 768px) {
   .hero-modal__input {
+    height: 66px;
     width: 100%;
     padding: 22px 24px;
     font-size: 18px;

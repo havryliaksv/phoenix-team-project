@@ -115,8 +115,33 @@
             <p class="hero-modal__text-card hero-modal__text-card3">300 g</p>
           </li>
         </ul>
+        <label class="hero-modal__label hero-modal__text" for="personal-name"
+          >Personal information</label
+        >
+        <div class="hero-modal-wrap">
+          <input
+            class="hero-modal__input"
+            name="user-name"
+            type="text"
+            id="personal-name"
+            placeholder="Name"
+            pattern="[a-zA-Zа-яА-Яїі]+$"
+            minlength="2"
+            required
+          />
+          <input
+            class="hero-modal__input"
+            name="user-surname"
+            type="text"
+            id="personal-surname"
+            placeholder="Surname"
+            pattern="[a-zA-Zа-яА-Яїі]+$"
+            minlength="2"
+            required
+          />
+        </div>
 
-        <label class="hero-modal__label">
+        <!-- <label class="hero-modal__label">
           <span class="hero-modal__text">Personal information</span>
           <span>
             <input
@@ -143,7 +168,7 @@
               required
             />
           </span>
-        </label>
+        </label> -->
         <label class="hero-modal__label">
           <span class="hero-modal__text">Email</span>
           <span>
