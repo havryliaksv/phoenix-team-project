@@ -83,6 +83,10 @@ body {
 
   background-color: var(--light-background-color);
 }
+textarea,
+input {
+  background-color: transparent;
+}
 .container {
   width: 100%;
   max-width: 365px;
