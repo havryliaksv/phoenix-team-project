@@ -108,7 +108,6 @@
   .subscribe-title {
     font-size: 24px;
     line-height: 1.17;
-
   }
 }
 @media screen and (min-width: 768px) {
@@ -238,6 +237,13 @@
   font-size: 14px;
   line-height: 1.21;
   letter-spacing: -0.02em;
+
+  outline: none;
+}
+.subscribe-modal-input:hover,
+.subscribe-modal-input:focus,
+.subscribe-modal-input:checked {
+  border-color: var(--accent-color);
 }
 
 .subscribe-modal-btn-submit {
@@ -252,12 +258,13 @@
   color: var(--light-color);
   font-weight: 600;
   font-size: 14px;
-  border-color: transparent;
+  border: none;
 }
 .subscribe-modal-btn-submit:hover,
 .subscribe-modal-btn-submit:focus {
   background-color: #fcf1e0;
   color: var(--accent-color);
+  border: ;
 }
 .modal-form-content {
   position: relative;
