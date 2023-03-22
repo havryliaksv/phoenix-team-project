@@ -1,7 +1,4 @@
-.hero__overlay .container-hero {
-  padding-left: 0px;
-  padding-right: 0px;
-}
+
 
 .hero {
   padding-left: 20px;
@@ -10,6 +7,26 @@
   /* padding-top: 14px; */
 }
 
+.hero__item {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 767px){
+  
+.hero__item {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.hero__overlay .container-hero {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+}
 .hero__overlay {
   display: flex;
   align-items: end;
@@ -50,8 +67,11 @@
     padding-bottom: 50px;
     /* padding-top: 24px; */
   }
+  
+  
 
   .hero__overlay {
+    max-width: 734px;
     height: 890px;
     background-image: linear-gradient(
         180deg,
@@ -84,6 +104,7 @@
   }
 
   .hero__overlay {
+    max-width: 1136px;
     height: 600px;
     background-image: linear-gradient(
         180deg,
@@ -128,11 +149,6 @@
   }
 }
 
-.hero__item {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
 
 .hero__group-ul {
   display: flex;

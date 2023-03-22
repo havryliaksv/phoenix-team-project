@@ -13,7 +13,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 62px;
-  padding-bottom: 62px;
+  padding-bottom: 63px;
 }
 .subscribe-content {
   padding-left: 24px;
@@ -33,7 +33,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   width: 291px;
-  height: 48px;
+  /* height: 48px; */
 
   color: var(--light-color);
 }
@@ -104,6 +104,8 @@
   }
   .subscribe-title {
     font-size: 24px;
+    line-height: 1.17;
+
   }
 }
 @media screen and (min-width: 768px) {
