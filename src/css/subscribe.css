@@ -75,7 +75,10 @@
   transition: background var(--timeing-function), color var(--timeing-function),
     font-size var(--timeing-function);
 }
-
+.subscribe-modal-img {
+  width: 100%;
+  height: 169px;
+}
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
   screen and (max-width: 767px) and (min-resolution: 192dpi),
   screen and (max-width: 767px) and (min-resolution: 2dppx) {
@@ -108,6 +111,9 @@
   .subscribe-title {
     font-size: 24px;
     line-height: 1.17;
+  }
+  .subscribe-modal-img {
+    height: 196px;
   }
 }
 @media screen and (min-width: 768px) {

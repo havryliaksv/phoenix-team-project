@@ -20,28 +20,30 @@
       <use href="./img/sprite.svg#icon-close-1"></use>
     </svg>
   </button>
-  <picture class="subscribe-modal-picture">
-    <source
-      srcset="
-        ./img/subscribe-img/subscribe-modal-mobile-min.jpg    1x,
-        ./img/subscribe-img/subscribe-modal-mobile-2x-min.jpg 2x
-      "
-      media="(max-width: 767px)"
-    />
-    <source
-      srcset="
-        ./img/subscribe-img/subscribe-modal-tablet-min.jpg    1x,
-        ./img/subscribe-img/subscribe-modal-tablet-2x-min.jpg 2x
-      "
-      media="(min-width: 768px)"
-    />
-    <img
-      src="/img/subscribe-img/subscribe-modal-mobile-min.jpg"
-      alt="new-chocolate"
-      height="169px"
-      class="subscribe-modal-img"
-    />
-  </picture>
+  <div class="subscribe-modal-img">
+    <picture class="subscribe-modal-picture">
+      <source
+        srcset="
+          ./img/subscribe-img/subscribe-modal-mobile-min.jpg    1x,
+          ./img/subscribe-img/subscribe-modal-mobile-2x-min.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <source
+        srcset="
+          ./img/subscribe-img/subscribe-modal-tablet-min.jpg    1x,
+          ./img/subscribe-img/subscribe-modal-tablet-2x-min.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        src="./img/subscribe-img/subscribe-modal-mobile-min.jpg"
+        alt="new-chocolate"
+        height="169"
+        class="subscribe-modal-img"
+      />
+    </picture>
+  </div>
   <div class="subscribe-modal-form-content">
     <p class="subscribe-modal-title">
       Explore our <br />
