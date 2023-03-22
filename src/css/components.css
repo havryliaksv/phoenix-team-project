@@ -1,256 +1,258 @@
 .components-section {
-    padding-top: 72px;
-    padding-bottom: 72px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 
 .components-title {
-    display: block;
-    font-family: Montserrat-600, sans-serif;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--dark-color);
-    margin-bottom: 24px;
+  display: block;
+  font-family: Montserrat-600, sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  margin-bottom: 24px;
 }
 
 .components-title-span {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .components-text {
-    display: block;
-    font-size: 14px;
-    line-height: 1.29;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: var(--dark-color);
-    /* padding-bottom: 32px; */
+  display: block;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--dark-color);
+  /* padding-bottom: 32px; */
 }
 
 .components-list {
-
-    
 }
 
 .components-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 270px;
-    border-radius: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 270px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 
 .components-item:nth-child(1) {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
-.components-item:nth-child(2), .components-item:nth-child(4) {
+/* .components-item:nth-child(2), .components-item:nth-child(4) {
     background-color: var(--light-color);  
     border: 1px solid #FD9222;
+} */
+/* .components-card-front:nth-child(2),
+.components-card-front:nth-child(4),
+.components-card-back:nth-child(2),
+.components-card-back:nth-child(4) {
+  background-color: var(--light-color);
+  border: 1px solid #fd9222;
+} */
+.card-with-border {
+  background-color: var(--light-color);
+  border: 1px solid #fd9222;
+  border-radius: 15px;
 }
 
 .components-item:nth-child(3) {
-    background-color: var(--dark-background-color);
+  background-color: var(--dark-background-color);
 }
 
-.components-img{
-    width: 224px;
-    height: 171px;
-    margin-top: 28px;
-    margin-bottom: 25px;
-    margin-left: auto;
-    margin-right: auto;
-
+.components-img {
+  width: 224px;
+  height: 171px;
+  margin-top: 28px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .components-img-name {
-   margin-left: 24px;
-   margin-bottom: 24px;
-   font-family: Montserrat-600, sans-serif;
-   font-size: 14px;
-   line-height: 1.29;
-   letter-spacing: -0.02em;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  font-family: Montserrat-600, sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
 }
 
 .components-item:nth-child(1) .components-img-name,
 .components-item:nth-child(3) .components-img-name {
-   color: var(--light-color);
+  color: var(--light-color);
 }
 
 .components-item:nth-child(2) .components-img-name,
 .components-item:nth-child(4) .components-img-name {
-   color: var(--dark-color);
+  color: var(--dark-color);
 }
 
 .components-card {
-    height: 270px;
-    perspective: 1000px;
+  height: 270px;
+  perspective: 1000px;
 }
 
 .components-card-flip {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
 
 .components-card:is(:hover, :focus) .components-card-flip {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-.components-card-front , .components-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;      
-    backface-visibility: hidden;
+.components-card-front,
+.components-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-
-.components-card-back{
-    position: absolute;
-    top: 0;
-    background-color: var(--light-color);
-    overflow: hidden;
-    padding: 28px;
-    border-radius: 15px;
-    transform: rotateY(180deg);
+.components-card-back {
+  position: absolute;
+  top: 0;
+  background-color: var(--light-color);
+  overflow: hidden;
+  padding: 28px;
+  border-radius: 15px;
+  transform: rotateY(180deg);
 }
 
 .components-card-name {
-    font-family: Montserrat-600, sans-serif;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: var(--dark-color);
-    margin-bottom: 8px;
+  font-family: Montserrat-600, sans-serif;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .components-card-text {
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    color: var(--dark-color);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--dark-color);
 }
 
 .components-card-item {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 14px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 14px;
 }
 
 .components-card-igradient {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 6px 16px;
-    height: 24px;
-    background-color: var(--accent-color);
-    border-radius: 35px;
-    margin-right: 5px;
-    font-size: 10px;
-    line-height: 1.2;
-    color: var(--light-color);   
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 16px;
+  height: 24px;
+  background-color: var(--accent-color);
+  border-radius: 35px;
+  margin-right: 5px;
+  font-size: 10px;
+  line-height: 1.2;
+  color: var(--light-color);
 }
 
 .components-card-benefits {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 24px;
-    background: var(--light-background-color);   
-    border: 1px solid var(--accent-color);
-    border-radius: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 24px;
+  background: var(--light-background-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 35px;
 
-    font-size: 10px;
-    line-height: 1.2;
+  font-size: 10px;
+  line-height: 1.2;
 }
 
-@media screen and (max-width: 767px){
-.components-item:not(:last-child) {
-        margin-bottom: 20px;
-    }
+@media screen and (max-width: 767px) {
+  .components-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    
-.components-section {
+  .components-section {
     padding-top: 100px;
     padding-bottom: 100px;
-}
+  }
 
-.components-title {
+  .components-title {
     font-size: 24px;
     width: 411px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 28px;
-}
+  }
 
-.components-text {
+  .components-text {
     margin-left: auto;
     margin-right: auto;
     width: 486px;
     margin-bottom: 50px;
-}
+  }
 
-.components-list {
+  .components-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 32px;
     column-gap: 32px;
-}
+  }
 
-.components-item {
+  .components-item {
     width: 336px;
-   
-}
+  }
 }
 
 @media screen and (min-width: 1200px) {
-
-.components-section {
+  .components-section {
     padding-top: 128px;
     padding-bottom: 128px;
-}
+  }
 
-.components-title {
+  .components-title {
     font-size: 24px;
     width: 411px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 28px;
-}
+  }
 
-.components-text {
+  .components-text {
     margin-left: auto;
     margin-right: auto;
     width: 486px;
     margin-bottom: 50px;
-}
+  }
 
-.components-list {
-    
+  .components-list {
     column-gap: 19px;
     display: flex;
-}
+  }
 
-.components-item {
+  .components-item {
     display: flex;
     width: 270px;
-
-  
-}
+  }
 }
