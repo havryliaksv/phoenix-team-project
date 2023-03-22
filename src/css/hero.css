@@ -1,5 +1,3 @@
-
-
 .hero {
   padding-left: 20px;
   padding-right: 20px;
@@ -13,19 +11,17 @@
   padding-bottom: 40px;
 }
 
-@media screen and (max-width: 767px){
-  
-.hero__item {
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+@media screen and (max-width: 767px) {
+  .hero__item {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-.hero__overlay .container-hero {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
+  .hero__overlay .container-hero {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 .hero__overlay {
   display: flex;
@@ -67,8 +63,6 @@
     padding-bottom: 50px;
     /* padding-top: 24px; */
   }
-  
-  
 
   .hero__overlay {
     max-width: 734px;
@@ -149,7 +143,6 @@
   }
 }
 
-
 .hero__group-ul {
   display: flex;
   align-items: baseline;
@@ -210,8 +203,11 @@
 }
 
 .hero__link-howmade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 28px;
-  width: 159px;
+  max-width: 159px;
   height: 41px;
   border: 1px solid #ffffff;
   color: var(--light-color);
@@ -223,6 +219,13 @@
   line-height: 1.2px;
   transition: color 250ms var(--timeing-function),
     border 250ms var(--timeing-function);
+}
+@media screen and (max-width: 356px) {
+  .hero__btn-buy,
+  .hero__link-howmade {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .hero__link-howmade:hover,
