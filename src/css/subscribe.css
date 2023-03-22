@@ -87,6 +87,9 @@
       ),
       url(/img/subscribe-img/subscribe-mobile-2x-min.jpg);
   }
+  .subscribe-modal-img {
+    height: 169px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -171,7 +174,6 @@
 .modal {
   opacity: 0;
   visibility: hidden;
-  width: 311px;
   height: 350px;
   max-width: 500px;
   position: fixed;
@@ -250,6 +252,7 @@
   color: var(--light-color);
   font-weight: 600;
   font-size: 14px;
+  border-color: transparent;
 }
 .subscribe-modal-btn-submit:hover,
 .subscribe-modal-btn-submit:focus {
@@ -258,6 +261,11 @@
 }
 .modal-form-content {
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .subscribe-modal.modal.active {
+    width: 311px;
+  }
 }
 @media screen and (min-width: 768px) {
   .subscribe-btn-modal {
@@ -309,7 +317,7 @@
     width: 538px;
     height: 412px;
   }
-  .modal {
+  .subscribe-modal.modal.active {
     text-align: left;
   }
 }
