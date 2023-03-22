@@ -111,6 +111,18 @@
     padding-bottom: 100px;
   }
 
+    .title-sellers {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .sellers-span {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+
   .sellers-list {
     display: flex;
     column-gap: 16px;
@@ -235,7 +247,7 @@
 }
 
 /* modal: Explore our new chocolate first */
-
+/* 
 @media screen and (max-width: 767px) {
   .modal-submit-conteiner {
     position: absolute;
@@ -282,6 +294,8 @@
     width: 28px;
     height: 28px;
     border: 2px solid #ffffff;
+    background-color: transparent;
+    border-color: transparent;
   }
 
   .modal-submit-close-icon {
@@ -469,12 +483,6 @@
     padding-right: 40px;
   }
 
-  .modal-submit-form {
-  }
-
-  .modal-submit-lab {
-  }
-
   .modal-submit-input {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -527,4 +535,4 @@
     background-color: #fcf1e0;
     color: var(--accent-color);
   }
-}
+} */
