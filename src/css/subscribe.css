@@ -270,7 +270,6 @@
 .subscribe-modal-btn-submit:focus {
   background-color: #fcf1e0;
   color: var(--accent-color);
-  border: ;
 }
 .modal-form-content {
   position: relative;
