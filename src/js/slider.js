@@ -2,7 +2,7 @@ $(function () {
   $('.reviews-list').slick({
     arrows: false,
     dots: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     mobileFirst: true,
     responsive: [
@@ -21,7 +21,7 @@ $(function () {
         },
       },
       {
-        breakpoint: 320,
+        breakpoint: 375,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -75,7 +75,7 @@ $(function () {
   $('.hero-modal__list').slick({
     arrows: false,
     dots: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     mobileFirst: true,
     responsive: [
