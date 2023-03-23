@@ -29,9 +29,6 @@
   /* padding-bottom: 32px; */
 }
 
-.components-list {
-}
-
 .components-item {
   display: flex;
   flex-direction: column;
